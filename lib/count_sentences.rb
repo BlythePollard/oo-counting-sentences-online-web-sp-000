@@ -26,6 +26,11 @@ class String
 
   def count_sentences
   self.split(/\!|\.|\?/)
+  
+  if self.include?("." || "!" || "?")
+    new_count= self.split if self.include?("." || "!" || "?")
+       new_count.delete_if {|string| string.length < 2}
+       new_count.count
   else return 0
   end
 end
