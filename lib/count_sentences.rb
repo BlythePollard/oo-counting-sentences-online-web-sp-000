@@ -25,6 +25,8 @@ class String
   end
 
   def count_sentences
+  self.split(\.||)
+  
   if self.include?("." || "!" || "?")
     new_count= self.split if self.include?("." || "!" || "?")
        new_count.delete_if {|string| string.length < 2}
