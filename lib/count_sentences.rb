@@ -28,7 +28,7 @@ class String
   
   
   if self.include?("." || "!" || "?")
-    self.split(/\!|\.|\?/)
+    self.split(/\!|\.|\?/).count
   else return 0
   end
 end
