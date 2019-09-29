@@ -25,7 +25,7 @@ class String
   end
 
   def count_sentences
-  self.split(\!|\.|\?)
+  self.split(/\!|\.|\?/)
   
   if self.include?("." || "!" || "?")
     new_count= self.split if self.include?("." || "!" || "?")
