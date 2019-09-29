@@ -28,7 +28,6 @@ class String
   if self.include?("." || "!" || "?")
     new_count= self.split if self.include?("." || "!" || "?")
        new_count.delete_if {|string| string.length < 2}
-       binding.pry
        new_count.count
   else return 0
   end
